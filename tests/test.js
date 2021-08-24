@@ -2,11 +2,16 @@ const api = require('../dist/index')
 
 console.log(api)
 
-var what2eat = new api.WhatToEat();
+var sqlite3 = new api.DBSqlite3();
 
-var cuisine = what2eat.whatToEat();
-console.log('本次吃点啥：', cuisine);
-console.log('');
-let internationalCuisine  = what2eat.whatToEat_InternationalCuisine();
-console.log('入选国际美食：', internationalCuisine['name'],);
-console.log('入选理由：', internationalCuisine['description'],);
+var db = sqlite3.openDB("./tests/dbs/616068.db", (error) => {
+    console.log('error', error);
+});
+
+if (db) {
+    console.log(db);
+    db.all('select * from model_type where level=0', function (err, row) {
+        console.log('err', err);
+        console.log(row);
+    })
+}

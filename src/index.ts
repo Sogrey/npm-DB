@@ -1,7 +1,4 @@
-export var VERSION = '0.0.3';
-
-// beans
-export { default as InternationalCuisine } from './classObjects/InternationalCuisine';
+export var VERSION = '0.0.1';
 
 // module
-export { default as WhatToEat } from './WhatToEat';
+export { default as DBSqlite3 } from './DBSqlite3';

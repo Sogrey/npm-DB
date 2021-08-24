@@ -6,7 +6,7 @@
 var api = require("../dist/index"); // 执行shell脚本
 var shell = require("shelljs"); // 执行shell脚本
 var argv = require('yargs') // 读取参数
-    .usage('Usage: WhatToEat [options]')
+    .usage('Usage: DB [options]')
     // .option('n', {
     //     alias: 'name', // 别名
     //     demand: true, // 是否必选
@@ -28,16 +28,16 @@ var argv = require('yargs') // 读取参数
     .epilog('copyright Sogrey')
     .argv;
 
-var what2eat = new api.WhatToEat();
+// var what2eat = new api.WhatToEat();
 
-var cuisine = what2eat.whatToEat();
-// shell.exec("echo 本次吃点啥： " + cuisine,{encoding:'utf8'});
-console.log("本次吃点啥： " + cuisine);
+// var cuisine = what2eat.whatToEat();
+// // shell.exec("echo 本次吃点啥： " + cuisine,{encoding:'utf8'});
+// console.log("本次吃点啥： " + cuisine);
 
 
-let internationalCuisine = what2eat.whatToEat_InternationalCuisine();
-console.log('入选国际美食：', internationalCuisine['name'], );
-console.log('入选理由：', internationalCuisine['description'], );
+// let internationalCuisine = what2eat.whatToEat_InternationalCuisine();
+// console.log('入选国际美食：', internationalCuisine['name'], );
+// console.log('入选理由：', internationalCuisine['description'], );
 
 
 

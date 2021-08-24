@@ -1,11 +1,11 @@
 {
-  "name": "@sogrey/what-to-eat",
-  "version": "0.0.3",
-  "description": "吃点啥",
+  "name": "@sogrey/db",
+  "version": "0.0.1",
+  "description": "DB操作",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "scripts": {
-    "build": "npx tsc -p .",
+    "build": "rm -rf ./dist & npx tsc -p .",
     "mocha:tests": "mocha --watch tests/mocha",
     "mocha:reporter": "mocha --reporter mochawesome tests/mocha",
     "istanbul:cover:tests": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 2000 --recursive -R spec tests/mocha/",
@@ -18,24 +18,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sogrey/npm-What-To-Eat.git"
+    "url": "git+https://github.com/Sogrey/npm-DB.git"
   },
   "keywords": [
     "npm",
     "Node Module Package",
-    "whattoeat",
-    "what-to-eat"
+    "DB"
   ],
   "author": "Sogrey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sogrey/npm-What-To-Eat/issues"
+    "url": "https://github.com/Sogrey/npm-DB/issues"
   },
-  "homepage": "https://github.com/Sogrey/npm-What-To-Eat#readme",
+  "homepage": "https://github.com/Sogrey/npm-DB#readme",
   "dependencies": {
     "commander": "^8.1.0",
     "es6-promise": "^4.2.8",
+    "mssql": "^6.3.2",
+    "mysql": "^2.18.1",
+    "oracledb": "^5.2.0",
     "shelljs": "^0.8.4",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^4.2.0",
     "yargs": "^16.2.0"
   },
   "devDependencies": {

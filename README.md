@@ -1,28 +1,21 @@
-# What To Eat
-吃点啥
+# npm DB
 
-## 编译
+
+
+Microsoft SQL Server client for Node.js
 ``` bash
-npm run build
+npm i mssql
 ```
-## Install
+Oracle Database
 ``` bash
-npm i @sogrey/what-to-eat
+npm i oracledb
 ```
-## Usage
-
-``` js
-let api = require('@sogrey/what-to-eat')
-
-var what2eat = new api.WhatToEat();
-
-var cuisine = what2eat.whatToEat();
-console.log('本次吃点啥：', cuisine);
-```
-
-## 命令行使用
-
+My SQL
 ``` bash
-$ WhatToEat
-本次吃点啥： 川湘菜
+npm i mysql
+```
+sqlite
+``` bash
+npm i sqlite3
+npm i sqlite
 ```
