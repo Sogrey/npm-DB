@@ -4,6 +4,8 @@ console.log(api)
 
 var sqlite3 = new api.DBSqlite3();
 
+// sqlite3.test();
+
 var db = sqlite3.openDB("./tests/dbs/616068.db", (error) => {
     console.log('error', error);
 });

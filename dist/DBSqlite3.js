@@ -7,6 +7,9 @@ var sqlite3_1 = __importDefault(require("sqlite3"));
 var DBSqlite3 = /** @class */ (function () {
     function DBSqlite3() {
     }
+    DBSqlite3.prototype.test = function () {
+        console.log('Hello world!');
+    };
     DBSqlite3.prototype.openDB = function (dbPath, callback) {
         // open({
         //   filename: dbPath,

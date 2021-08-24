@@ -5,6 +5,10 @@ class DBSqlite3 {
 
   constructor() { }
 
+  test(){
+    console.log('Hello world!');
+  }
+
   openDB(dbPath: string, callback: ((err: Error | null) => void) | undefined) {
     // open({
     //   filename: dbPath,

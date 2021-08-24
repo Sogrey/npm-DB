@@ -11,10 +11,11 @@
     "istanbul:cover:tests": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 2000 --recursive -R spec tests/mocha/",
     "npm:publish": "npm publish --access public",
     "npm:link": "npm link",
+    "deploy": "bash deploy.sh",
     "test": "node ./tests/test.js"
   },
   "bin": {
-    "WhatToEat": "./bin/whatToEat.js"
+    "db": "./bin/db.js"
   },
   "repository": {
     "type": "git",
