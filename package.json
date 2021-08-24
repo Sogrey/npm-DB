@@ -1,0 +1,14 @@
+{
+  "name": "@sogrey/what-to-eat-demo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Sogrey",
+  "license": "MIT",
+  "dependencies": {
+    "@sogrey/what-to-eat": "^0.0.3"
+  }
+}
