@@ -39,5 +39,3 @@ git commit -m 'deploy 🎉'
 git push -f git@github.com:Sogrey/npm-DB.git main
 
 echo -e "\033[32;40m done \033[0m "
-
-cd -
